@@ -66,10 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
                imageRow.childNodes[1].classList.remove('left-hand-anim');
                imageRow.childNodes[3].classList.remove('right-hand-anim');
 
-                const choosedComputer = imageRow.childNodes[3].src;
+                
                 const choosedPlayer = item.textContent.toLowerCase();
-                //console.log(aa);
-                console.log(randomImage);
+                
                if(choosedPlayer == 'scissors' && randomImage == 'img/rock.png') {
                   countComputer++;
                   scoreComputer.textContent = countComputer;
