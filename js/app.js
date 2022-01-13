@@ -45,10 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.play-btn').forEach(item => {
          item.addEventListener('click', (e) => {
             const target = e.target;
-            imageRow.innerHTML = `
-            <img class="left-hand" src="${gameImage[0]}" alt="">
-            <img class="ss" src="${gameImage[0]}" alt="">
-            `;
+       
 
             imageRow.childNodes[1].classList.add('left-hand-anim')
             imageRow.childNodes[3].classList.add('right-hand-anim')
@@ -99,27 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                }
             }, 1100);
             
-            // if (target.innerHTML.toLowerCase() == 'paper') {
-            //    setTimeout(() => {
-            //       imageRow.childNodes[1].src = gameImage[2];
-            //    }, 1100);
-            // }
-            // else if (target.innerHTML.toLowerCase() == 'scissors') {
-            //    setTimeout(() => {
-            //       imageRow.childNodes[1].src = gameImage[1];
-            //    }, 1100);
-            // }
-            // else {
-            //    setTimeout(() => {
-            //       imageRow.childNodes[1].src = gameImage[0];
-            //    }, 1100);
-            // }
-            // setTimeout(() => {
-            //    imageRow.childNodes[3].src = gameImage[Math.floor(Math.random() * gameImage.length)];
-
-            //    imageRow.childNodes[1].classList.remove('left-hand-anim');
-            //    imageRow.childNodes[3].classList.remove('right-hand-anim');
-            // }, 1100);
+           
 
 
          })
